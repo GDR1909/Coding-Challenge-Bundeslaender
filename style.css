@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.content {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: lightgray;
+}
+
+h1 {
+    color: rgb(61, 61, 61);
+    margin: 0;
+    padding: 8px 0px 8px 16px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    border: 10px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    width: calc(33% - 10px);
+    box-sizing: border-box;
+    transition: ease-in-out 125ms;
+}
+
+.card:hover {
+    transition: ease-in-out 125ms;
+    border: 10px solid darkgray;
+}
+
+h3 {
+    color: black;
+    margin: 0;
+}
+
+.lettersContainer {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.letterBox {
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    transition: ease-in-out 125ms;
+}
+
+.letterBox:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    transition: ease-in-out 125ms;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width: 850px) {
+    .card {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 800px) {
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media(max-width: 525px) {
+    .card {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 500px) {
+    .card {
+        width: calc(100% - 10px);
+    }
+}
+
+@media(max-width: 370px) {
+    .letterBox {
+        font-size: 14px;
+        padding: 5px;
+    }
+}

@@ -12,8 +12,26 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="init()">
+    <div class="content">
+        <header>
+            <h1>BUNDESLÄNDER</h1>
+        </header>
 
+        <div class="cardsContainer" id="cardsContainer">
+
+        </div>
+
+        <footer>
+            <div class="lettersContainer" id="lettersContainer">
+
+            </div>
+
+            <div class="letterBox" onclick="renderCards()">
+                Reset
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
